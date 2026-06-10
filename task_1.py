@@ -6,7 +6,7 @@ RULES = [
     {
         "patterns": [r"\b(hi|hello|hey|what'?s up)\b"],
         "responses": [
-            "Hello! How can I help you today? 😊",
+            "Hello! How can I help you today? ",
             "Hey there! What can I do for you?",
             "Hi! Nice to meet you. How can I assist?",
         ],
@@ -85,9 +85,9 @@ RULES = [
     {
         "patterns": [r"\b(bye|goodbye|see you|later|take care|quit|exit)\b"],
         "responses": [
-            "Goodbye! Have a wonderful day! 👋",
+            "Goodbye! Have a wonderful day! ",
             "See you later! Take care!",
-            "Bye! Come back anytime 😊",
+            "Bye! Come back anytime ",
         ],
         "tag": "farewell",
     },
@@ -96,7 +96,7 @@ RULES = [
     {
         "patterns": [r"\b(thanks|thank you|thx)\b"],
         "responses": [
-            "You're welcome! 😊",
+            "You're welcome! ",
             "Happy to help!",
             "Anytime! Let me know if you need anything else.",
         ],
@@ -139,7 +139,7 @@ def evaluate_math(expression: str) -> str:
             elif op == "*": result = a * b
             elif op == "/":
                 if b == 0:
-                    return "Division by zero is undefined! ⚠️"
+                    return "Division by zero is undefined! "
                 result = a / b
             # Return int if result is whole number
             return f"The answer is {int(result) if result == int(result) else round(result, 4)} "
